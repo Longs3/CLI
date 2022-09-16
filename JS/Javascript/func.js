@@ -25,3 +25,18 @@ function tobecon() {
     document.write("everything is deleted");
     }
 }
+var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+svg.width = 500;
+svg.height = 50;
+var text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+text.style.fontFamily = 'Times New Roman';
+text.style.fontSize = '50';
+text.setAttribute('x', '0');
+text.setAttribute('y', '0');
+text.textContent = 'Hello, World!';
+svg.appendChild(text);
+document.body.appendChild(svg);
+/*variable_name {Required} The name of the variable: used when calling it.
+= [Optional] Assignment (defining the variable)
+value {Required when using Assignment} The value of a variable [default: undefined]
+*/
