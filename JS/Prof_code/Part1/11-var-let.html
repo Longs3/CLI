@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+    <script>
+        /*
+                The main difference is scoping rules. 
+                Variables declared by var keyword are scoped to the immediate function body (hence the function scope) 
+                while let variables are scoped to the immediate enclosing block denoted by { } (hence the block scope).
+
+
+                */
+        function run() {
+            var foo = "Foo";
+            let bar = "Bar";
+
+            console.log(foo, bar); // Foo Bar
+
+            {
+                var moo = "Mooo"
+                let baz = "Bazz";
+                console.log(moo, baz); // Mooo Bazz
+            }
+
+            console.log(moo); // Mooo
+            console.log(baz); // ReferenceError
+        }
+
+        run();
+    </script>
+</head>
+
+<body></body>
+
+</html>
