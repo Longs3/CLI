@@ -36,7 +36,13 @@ text.setAttribute('y', '0');
 text.textContent = 'Hello, World!';
 svg.appendChild(text);
 document.body.appendChild(svg);
+
+
 /*variable_name {Required} The name of the variable: used when calling it.
 = [Optional] Assignment (defining the variable)
 value {Required when using Assignment} The value of a variable [default: undefined]
 */
+
+// change string to int
+var str = "123";
+str = parseFloat(str);
