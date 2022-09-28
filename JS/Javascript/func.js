@@ -1,4 +1,4 @@
-// this for logging JSON responses from API calss
+// this for logging JSON responses from API class
 
 console.log({
     'Email': '',
@@ -44,5 +44,6 @@ value {Required when using Assignment} The value of a variable [default: undefin
 */
 
 // change string to int
-var str = "123";
-str = parseFloat(str);
+function reverseString(str) {
+    return [...String(str)].reverse().join('');
+}
