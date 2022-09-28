@@ -44,6 +44,3 @@ value {Required when using Assignment} The value of a variable [default: undefin
 */
 
 // change string to int
-function reverseString(str) {
-    return [...String(str)].reverse().join('');
-}
