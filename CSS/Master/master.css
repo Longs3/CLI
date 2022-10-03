@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    color: rgb(14, 185, 111);
+    background: #000000;
+}
+
+ul:first-child li {
+    float: left;
+    margin: 5px 10px 5px 0px;
+    padding: 5px;
+    text-align: center;
+    list-style: none;
+}
+a:hover, a:visited, a {
+    text-decoration: none;
+    color: inherit;
+}
+
+[kwd] {
+    color:dodgerblue;
+}
+
+[string] {
+    color:coral;
+}
+
+[int] {
+    color:darkseagreen;
+}
+
+[var] {
+    color:lightskyblue;
+}
+
+[none] {
+    color:silver;
+}
+
+[key] {
+    color:rgb(220, 140, 220);
+}
+
+
+
+/*
+*           universal selecto
+div span    select span inside div
+#idName     select the id with that name
+.Name       class selector
+.blue.red   class bule and red
+:pseudo-class       all elements with pseudo-class
+::pseudo-element    element that matches pseudo-element
+:lang(en)   element that matches :lang declaration, for example <span lang="en"></span>
+div > p     child selector
+
+[x          ]           with attribute x
+[x  = 'val' ]           wehre x has value val
+[x ~= 'val' ]           where val appears in the whitespace-separated list of x
+[x ^= 'val' ]           where x begins with val
+[x $= 'val' ]           where x end with val
+[x *= 'val' ]           where x contain val
+[x |= 'val' ]           wehre x starts with val and followed by -
+[x  = 'val'[i ]         where x has value val ignoring lettercase
+
+*/

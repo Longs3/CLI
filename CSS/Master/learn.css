@@ -20,3 +20,9 @@ body {
 .underline {
     text-decoration: underline;
 }
+
+li {
+    /* list-style-image: url('../../image/1.jpg'); */
+    /* list-style-type: square; */
+    list-style-position: inside;
+}
