@@ -3,7 +3,9 @@
 }
 
 body {
-    color: black;
+    background: gray;
+    color: white;
+    word-spacing: 1px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -12,7 +14,7 @@ body {
     background: yellow;
     color: blue;
     width: 80%;
-    
+
 }
 
 .underline {
