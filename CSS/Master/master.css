@@ -77,8 +77,6 @@ code span[int] {
 }
 footer {
     width:80%;
-    display: flex;
-    justify-content: space-around;
     border-top: 1px dashed #ccc;
     margin: 0 auto;
 }
@@ -90,8 +88,7 @@ footer {
 }
 
 .centerParagraph {
-    width: 200px;
-    margin: 0 auto;
+    text-align: center;
 }
 
 .centerImage {
@@ -107,6 +104,7 @@ footer ul{
 footer ul li {
     width:25%;
     float:left;
+    color: #8fbc8f;
     margin: 0 auto;
     text-align: center;
     padding: 10px 0px 0px 0px;
