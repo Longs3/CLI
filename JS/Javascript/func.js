@@ -37,12 +37,24 @@ text.textContent = 'Hello, World!';
 svg.appendChild(text);
 document.body.appendChild(svg);
 
-
+// accessing table element and vaule
+let table = document.body.firstElementChild;
+console.log(table.rows);
+console.log(table.rows[0]);
+console.log(table.tHead);
+console.log(table.tBodies);
 /*
 *   var qs = location.search.substring(1);
 *   var currentHostName = location.hostname;
 *   var currentUrl = location.href;
 */
+
+/**
+ * -Infinity < Number.MIN_SAFE_INTEGER < Number.MIN_VALUE < 0 < Number.MAX_SAFE_INTEGER < Number.MAX_VALUE < Infinity
+ * 
+ */
+
+
 
 /*
 O(1)
@@ -71,4 +83,3 @@ function O(n) {
             for(var k=j;k<n;k++) console.log(k);
 }
 */
-// change string to int

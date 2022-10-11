@@ -46,6 +46,10 @@ function add() { var value = 0; for (var i = 0; i < arguments.length; i++) { val
 function sub() { var value = 0; if (arguments.length == 0) return 0; else { value = arguments[0]; for (var i = 1; i < arguments.length; i++) { value -= arguments[i]; } } return value; }
 function mul() { var value = 1; if (arguments.length == 0) return 0; else { for (var i = 0; i < arguments.length; i++) value *= arguments[i]; } return value; }
 function div() { var value = 0; if (arguments.length == 0) return 0; else { value = arguments[0]; for (var i = 1; i < arguments.length; i++) { value /= arguments[i]; } } return value; }
+// Math
+function sigma(start, end, n) { var value = 0; try { parseInt(start); parseInt(end); parseInt(n); } catch (err) { return null; } for (var i = start; i <= end; i++) { value += Math.pow(i, n); } return value; }
+function isPrime(num) { if (num <= 1) return false; if (num <= 3) return true; if (num % 2 == 0 || num % 3 == 0) return false; for (var i = 5; i * i <= n; i += 6) { if (n % i == 0 || n % (i + 2) == 0) return false; } return true; }
+function primeFactors(num) { var arr = []; while (num % 2 == 0) { arr.push(2); num /= 2; } for (var i = 3; i * i <= num; i += 2)  while (num % i == 0) { arr.push(i); num /= i; } if (num > 2) arr.push(num); return arr; }
 /*
  ** onblur       An element loses focus
  ** onchange     The content of a form field chanes
@@ -63,8 +67,8 @@ function div() { var value = 0; if (arguments.length == 0) return 0; else { valu
  ** onmouseup    A mouse button is released
  ** onsubmit     The submit button is clicked in a form
  */
-a = {a:11, b:12};
-b = {a:11, b:12};
-c = {a:12, b:12};
-console.log(isEqual(a,b));
-console.log(isEqual(a,c));
+a = { a: 11, b: 12 };
+b = { a: 11, b: 12 };
+c = { a: 12, b: 12 };
+console.log(isEqual(a, b));
+console.log(isEqual(a, c));
