@@ -1,3 +1,3 @@
-var dos = ['3,', 3,23];
-console.log(dos);
-dos = parseInt(dos)
+document.getElementById('header').setAttribute('class', 'topnav');
+
+document.getElementsByTagName('footer').setAttribute('class', 'footer');

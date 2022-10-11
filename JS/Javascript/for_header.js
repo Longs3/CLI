@@ -23,6 +23,12 @@ function haxaTodecimal(val1) {
     f = parseInt(f, 16) / Math.pow(16, f.length);
     return i + f;
 }
+/*
+* octal: 071
+* hexa: 0xac
+*
+*/
+
 // temperature
 function celsiusToKelvin(val1) { return (Number.isNaN(val1)) ? 0 : val1 + 273; }
 function celsiusToFaren(val1) { return (Number.isNaN(val1)) ? 0 : (9 / 5) * val1 + 32; }
@@ -39,3 +45,27 @@ function Norgate(bool, check) { return Notgate(Orgate(bool, check)); }
 function Nandgate(bool, check) { return Notgate(Andgate(bool, check)); }
 function Xorgate(bool, check) { return (bool == check) ? false : true; }
 function Xnorgate(bool, check) { return Notgate(Xorgate(bool, check)); }
+
+
+function add() { var value = 0; for (var i = 0; i < arguments.length; i++) { value += arguments[i]; } return value; }
+function sub() { var value = 0; if (arguments.length == 0) return 0; else { value = arguments[0]; for (var i = 1; i < arguments.length; i++) { value -= arguments[i]; } } return value; }
+function mul() { var value = 1; if (arguments.length == 0) return 0; else { for (var i = 0; i < arguments.length; i++) value *= arguments[i]; } return value; }
+function div() { var value = 0; if (arguments.length == 0) return 0; else { value = arguments[0]; for (var i = 1; i < arguments.length; i++) { value /= arguments[i]; } } return value; }
+/*
+** onblur       An element loses focus
+** onchange     The content of a form field chanes
+** onclick      The mouse clicks an object 
+** onerror      An error occurs when the document or an image loads
+** onfocus      An element gets focus
+** onkeydown    A key on the keyboard is pressed
+** onkeypress   A key on the keyboard is pressed or held down
+** onkeyup      A key on the keyboard is released
+** onload       A page or an image is finished loading
+** onmousedown  A mouse button is pressed
+** onmousemove  A mouse is moved
+** onmouseout   A mouse is moved off an element
+** onmouseover  The mouse is moved over an element
+** onmouseup    A mouse button is released
+** onsubmit     The submit button is clicked in a form 
+*/
+console.log(add('hi', 'ho'));

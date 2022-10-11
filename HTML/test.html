@@ -6,34 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Long Seng</title>
-    <style type="text/css" rel="stylesheet">
-        /* @import '../../CSS/Master/learn.css';
-        @import '../CSS/Master/master.css'; */
-        .wrap {
-            height: 50px;
-            width:100px;
-            border: 1px solid blue;
-            text-align: center;
-        }
-        .wrap::before {
-            content: '';
-            display:inline-block;
-            height:100%;
+    <style rel="stylesheet" type="text/css">
+        .wrapper {
+            display:table;
             vertical-align:middle;
-            width:1px;
+            width:200px;
+            height:200px;
+            background-color: #9e9e9e;
         }
-        img {
+        .parent {
+            display:table-cell;
             vertical-align: middle;
+            align-content: flex-end;
         }
+        .child {
+            display:inline-block;
+            width:100px;
+            height:100px;
+            background-color: teal;
+        }
+        /* @import '../CSS/Master/master.css'; */
+        /* @import '../CSS/Master/test.css'; */
     </style>
 
 </head>
 
 <body>
-    <div class="wrap">
-        <img src="https://lorempixel/400/200">
-    </div>
-    <!-- <script type="text/javascript" lang="Javascript" src="../../JS/Javascript/test.js"></script> -->
+    <table>
+        <thead>
+            <tr>
+                <th>Sr.No</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Programming</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>ProgrammingTest</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- <script src="../JS/Javascript/for_header.js"></script> -->
+    <script src="../JS/Javascript/test.js"></script>
 </body>
 
 </html>

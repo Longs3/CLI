@@ -21,8 +21,8 @@ document.body.appendChild(element);
 
 
 function tobecon() {
-    if(window.confirm("Are you sure you want to delete it")) {
-    document.write("everything is deleted");
+    if (window.confirm("Are you sure you want to delete it")) {
+        // do sth
     }
 }
 var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
@@ -38,9 +38,37 @@ svg.appendChild(text);
 document.body.appendChild(svg);
 
 
-/*variable_name {Required} The name of the variable: used when calling it.
-= [Optional] Assignment (defining the variable)
-value {Required when using Assignment} The value of a variable [default: undefined]
+/*
+*   var qs = location.search.substring(1);
+*   var currentHostName = location.hostname;
+*   var currentUrl = location.href;
 */
 
+/*
+O(1)
+function O(n) {
+    console.log(n)
+}
+O(n)
+function O(n) {
+    for (var i =0;i<n;i++) {
+        console.log(n);
+    }
+}
+
+O(n^2) 
+function O(n) {
+    for (var i =0;i<n;i++) {
+        console.log(i);
+        for(var j=i;j<n;j++)
+    }
+}
+
+O(n^3)
+function O(n) {
+    for(var i=0;i<n;i++) console.log(i);
+        for(var j=i;j<n;j++) console.log(j);
+            for(var k=j;k<n;k++) console.log(k);
+}
+*/
 // change string to int

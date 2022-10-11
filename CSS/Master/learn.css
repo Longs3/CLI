@@ -1,28 +1,23 @@
+@import "./test.css";
+@import url('./test.css');
+@import './test.css' print;
+@import url('./test.css') screen and (orientation: landscape);
+
 * {
     box-sizing: border-box;
 }
 
-body {
-    background: gray;
-    color: white;
-    word-spacing: 1px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#div1 {
-    border: 3px solid black;
-    background: yellow;
-    color: blue;
-    width: 80%;
-
-}
-
-.underline {
+.text {
+    color: green;
     text-decoration: underline;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-shadow: yellow 0 0 30px,
+        green 4px 4px 10px;
 }
 
 li {
-    /* list-style-image: url('../../image/1.jpg'); */
-    /* list-style-type: square; */
-    list-style-position: inside;
+    list-style-type: disc, circle, square, decimal, lower-roman, armenian, decimal-leading-zero, georgian, lower-alpha, lower-greek, lower-latin, none, symbols('*'), upper-alpha, upper-latin, upper-roman;
+    list-style-image: url('../../image/01.jpg');
+    list-style-position: inside, outside;
 }

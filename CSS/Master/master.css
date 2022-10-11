@@ -45,11 +45,27 @@ a {
 code {
     color: #ccc;
 }
-
+code span[br]::before {
+    content: '\a';
+    white-space: pre-wrap;
+}
+code span[br='2']::before {
+    white-space: pre-wrap;
+    content:'\a\a';
+}
+code span[none] {
+    color:#ccc;
+}
+code span[com]::after {
+    content:';';
+    color:#ccc !important;
+}
 code span[func] {
     color: #ffd700;
 }
-
+code span[tab]::before {
+    content: '\a    ';
+}
 code span[var] {
     color: #87cefa;
 }
@@ -81,10 +97,14 @@ footer {
     margin: 0 auto;
 }
 .centerDiv {
-    width: 200px;
+    width: 70%;
     margin: 0 auto;
-    height: 100px;
-    border: 1px solid #000;
+}
+.centerDiv2 {   
+    position: absolute;
+    top: 50%;
+    left:50;
+    transform: translate(-50%, -50%);
 }
 
 .centerParagraph {
@@ -110,6 +130,23 @@ footer ul li {
     padding: 10px 0px 0px 0px;
 }
 
+/* for centering the table cell in the table */
+.wrapper {
+    display:table;
+    vertical-align: middle;
+    height:fit-content;
+    width:fit-content;
+}
+/* for controling the propertities in the inline block */
+.wrapper.parent {
+    display:table-cell;
+    vertical-align: middle;
+    align-content: center;
+}
+.wrapper.parent.child {
+    display:inline-block;
+    
+}
 /*
 *                   universal selecto
 div                 select div
