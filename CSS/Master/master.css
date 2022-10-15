@@ -8,29 +8,33 @@ body {
     color: rgb(14, 185, 111);
     background: #000000;
 }
+
 .topnav ul {
     display: flex;
-    padding-top:5px;
+    padding-top: 5px;
     padding-bottom: 5px;
     align-items: center;
 }
+
 .topnav ul:first-child li {
     border-right: #ccc 1px dashed;
     border-width: 80%;
     padding-right: 15px;
 }
+
 .topnav ul:nth-child(2) li {
     border-left: #ccc 1px dashed;
     border-width: 80%;
     padding-left: 15px;
 }
+
 .topnav ul:nth-child(-n+2) li {
-    float: left ;
+    float: left;
     margin: 5px 10px 0px 0px;
-    display:flex;
+    display: flex;
     align-items: center;
     text-align: center;
-    list-style: none ;
+    list-style: none;
 }
 
 
@@ -41,31 +45,50 @@ a {
     color: inherit;
 }
 
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: #1e90ff;
+    text-decoration: underline;
+}
+
+a[href]::after {
+    content: "(" + attr(href) + ")"
+}
 
 code {
     color: #ccc;
 }
+
 code span[br]::before {
     content: '\a';
     white-space: pre-wrap;
 }
+
 code span[br='2']::before {
     white-space: pre-wrap;
-    content:'\a\a';
+    content: '\a\a';
 }
+
 code span[none] {
-    color:#ccc;
+    color: #ccc;
 }
+
 code span[com]::after {
-    content:';';
-    color:#ccc !important;
+    content: ';';
+    color: #ccc !important;
 }
+
 code span[func] {
     color: #ffd700;
 }
+
 code span[tab]::before {
     content: '\a    ';
 }
+
 code span[var] {
     color: #87cefa;
 }
@@ -85,25 +108,29 @@ code span[string] {
 code span[int] {
     color: #8fbc8f;
 }
+
 .topnav {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     width: 100%;
-    border-bottom:#ccc 1px solid;
+    border-bottom: #ccc 1px solid;
 }
+
 footer {
-    width:80%;
+    width: 80%;
     border-top: 1px dashed #ccc;
     margin: 0 auto;
 }
+
 .centerDiv {
     width: 70%;
     margin: 0 auto;
 }
-.centerDiv2 {   
+
+.centerDiv2 {
     position: absolute;
     top: 50%;
-    left:50;
+    left: 50;
     transform: translate(-50%, -50%);
 }
 
@@ -117,13 +144,14 @@ footer {
     margin: 0 auto;
 }
 
-footer ul{
-    width:100%;
+footer ul {
+    width: 100%;
     list-style-type: none;
 }
+
 footer ul li {
-    width:25%;
-    float:left;
+    width: 25%;
+    float: left;
     color: #8fbc8f;
     margin: 0 auto;
     text-align: center;
@@ -132,21 +160,24 @@ footer ul li {
 
 /* for centering the table cell in the table */
 .wrapper {
-    display:table;
+    display: table;
     vertical-align: middle;
-    height:fit-content;
-    width:fit-content;
+    height: fit-content;
+    width: fit-content;
 }
+
 /* for controling the propertities in the inline block */
 .wrapper.parent {
-    display:table-cell;
+    display: table-cell;
     vertical-align: middle;
     align-content: center;
 }
+
 .wrapper.parent.child {
-    display:inline-block;
-    
+    display: inline-block;
+
 }
+
 /*
 *                   universal selecto
 div                 select div

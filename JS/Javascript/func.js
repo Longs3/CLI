@@ -43,6 +43,19 @@ console.log(table.rows);
 console.log(table.rows[0]);
 console.log(table.tHead);
 console.log(table.tBodies);
+
+
+var uri = 'http://your.domain/product.aspx?category=4&product_id=2140&query=lcd+tv';
+var queryString = {};
+uri.replace(
+    new RegExp("([^?=&]+)(=([^&]*))?", 'g'),
+    function($0, $1, $2, $3) {queryString[$1] = $3;}
+)
+console.log('ID: ' + queryString['product_id']);
+console.log('Name: ' + queryString('product_name'));
+console.log('Category: ' + queryString['Category']);
+
+
 /*
 *   var qs = location.search.substring(1);
 *   var currentHostName = location.hostname;

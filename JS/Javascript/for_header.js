@@ -7,6 +7,15 @@ function reverseString(str) { return [...String(str)].reverse().join(""); }
 function toLower(val1) { return val1.toLowerCase(); }
 function toUpper(val1) { return val1.toUpperCase(); }
 function isEqual(val1, val2) { var a = Object.getOwnPropertyNames(val1); var b = Object.getOwnPropertyNames(val2); if (len(b) != len(a)) return false; for (var i = 0; i < len(a); i++) if (val1[a[i]] != val2[a[i]]) return false; return true; }
+function encode(val1) {
+    var value;
+    value = btoa(val1);
+    return value;
+}
+function decode(val1) {
+    var value = atob(val1);
+    return value;
+}
 // bit
 function decimalToBinary(val1) { return Number.isNaN(val1) ? 0 : val1.toString(2); }
 function decimalToOctal(val1) { return Number.isNaN(val1) ? 0 : val1.toString(8); }
@@ -52,6 +61,37 @@ function isPrime(num) { if (num <= 1) return false; if (num <= 3) return true; i
 function primeFactors(num) { var arr = []; while (num % 2 == 0) { arr.push(2); num /= 2; } for (var i = 3; i * i <= num; i += 2)  while (num % i == 0) { arr.push(i); num /= i; } if (num > 2) arr.push(num); return arr; }
 function modularExponentiation(base, exponent, modulus) { if (modulus == 1) return 0; var value = 1; for (var i = 0; i < exponent; i++) { value = (value * base) % modulus; } return value; }
 
+
+/**
+ * RegExp
+ * i Perform case-insensitive matching
+ * g Perform a global match (find all the matches rather that stopping after the first match)
+ * m Perform multiline matching
+ * s Perform single line
+ * u Perform unicode
+ * y sticky
+ * 
+ * ^: Indicates the start of a string/line
+ * \d: Find any digit
+ * [abc]: Finds any character between the brackets
+ * [^abc]: Finds any character not between the brackets
+ * [0-9]: Finds any digit between the brackets
+ * [^0-9]: Finds any digit not between the brackets
+ * (x|y): Finds any of the alternatives specified
+ * /\w/: Finds any character of the latin alphabet doesn't include symbols
+ * /\W/: Find all the symbol and character that is not of the latin alphabet 
+ * 
+ * var reg = /\d+/;
+ * var num = /^\d+$/;
+ * var float = /^[0-9]*.[0-9]*[1-9]+$/;
+ * var onlyAlphanumeric = /[a-zA-Z0-9]/;
+ * var don'tknowyet = /[A-Za-z0-9_-]
+ * 
+ * /abc/   for exact match aabccc
+ * /ab*c/  for more b; abbbbbc 
+ * [abce]   look for a, b, c, and e
+ * [a-e]    look for a to e
+ */
 
 
 
